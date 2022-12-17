@@ -4,7 +4,12 @@ let currentResult = defaultResult;
 
 currentResult = (currentResult + 10) *3/2-1; 
 
-currentResultDescription = '(' + defaultResult + ' 10*3/2-1)';
+currentResultDescription = `(${defaultResult} + 10*3/2-1)`;
 
-outputResult(currentResult, currentResultDescription);
+let errorMessage = 'An error' + 
+                ' has occured!';
+
+console.log(errorMessage);
+
+outputResult(currentResult, errorMessage);
 
