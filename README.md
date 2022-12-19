@@ -8,7 +8,7 @@ A Javascript course from Fundamentals to Advanced Concepts
 - You can use \n to display a string in a new line within the quotes of a string. the backslash escapes the next character from normal syntax
 
 
-<h1>Functions</h1>
+<h1 style='color: rgb(255, 0, 0;'>Functions</h1>
 Functions that work without any input do not require a parameter. When JS sees your function, it doesn't get executed immediately, it stores it in memory waiting for the function call. 
 
 You can only pass values during calling if a function has parameters. 
