@@ -11,3 +11,10 @@ A Javascript course from Fundamentals to Advanced Concepts
 #Functions
 Functions that work without any input do not require a parameter. When JS sees your function, it doesn't get executed immediately, it stores it in memory waiting for the function call. 
 
+You can only pass values during calling if a function has parameters. 
+
+You can call the function before defining it and it still works. This is because the browser first reads your script and registers any functions before it can begin execution. 
+
+In a function, you can access global scope variables/constants, but you can't do the reverse. \n 
+The return statement *completes function execution* 
+
