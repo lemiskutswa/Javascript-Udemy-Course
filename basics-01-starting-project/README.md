@@ -9,4 +9,5 @@ A Javascript course from Fundamentals to Advanced Concepts
 
 
 #Functions
-Functions that work without any input do not require a parameter. 
+Functions that work without any input do not require a parameter. When JS sees your function, it doesn't get executed immediately, it stores it in memory waiting for the function call. 
+
