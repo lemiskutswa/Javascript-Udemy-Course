@@ -6,10 +6,7 @@ function add(num1, num2) {
     return result;     
 }
 
-
-currentResult = add(10, 12);
-
-currentResultDescription = `(${defaultResult} + 10*3/2-1)`;
+addBtn.addEventListener('click');
 
 outputResult(currentResult, currentResultDescription);
 
