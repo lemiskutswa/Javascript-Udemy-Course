@@ -19,5 +19,8 @@ In a function, you can access global scope variables/constants, but you can't do
 The return statement *completes function execution*
 
 You can execute functions indirectly by naming the function for example in an event listener without including the brackets. This ensures that the function is not executed when the browser is parsing the srcipt. 
-<h1></h1>
+
+How to return more than one piece of data? Future lectures
+
+- addEventListner is a builtin JS function
 
