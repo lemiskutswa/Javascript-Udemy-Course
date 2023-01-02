@@ -24,3 +24,9 @@ How to return more than one piece of data? Future lectures
 
 - addEventListner is a builtin JS function
 
+<h2>Converting Data types</h2>
+
+Even when you specify that an input type in javascript should be a string, it executes them as integers. So when you have a calculator, for example, it will concatenate(for addition) numbers and output them as strings instead of converting the number to an actual number for a mathematical addition operation. 
+
+This is where parseInt() comes in. It converts the number initially executed as a string to a number for a mathematical operation. 
+
