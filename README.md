@@ -28,5 +28,21 @@ How to return more than one piece of data? Future lectures
 
 Even when you specify that an input type in javascript should be a string, it executes them as integers. So when you have a calculator, for example, it will concatenate(for addition) numbers and output them as strings instead of converting the number to an actual number for a mathematical addition operation. 
 
-This is where parseInt() comes in. It converts the number initially executed as a string to a number for a mathematical operation. 
+This is where parseInt() comes in. It converts the number initially executed as a string to a number for a mathematical operation.You can also use a plus (+) instead of parseInt/parseFloat. 
+
+{NOTE}: The plus operator is the only one that supports string concatenation on JS. 
+
+Thankfully, JavaScript is pretty smart and therefore is actually able to handle this code:
+
+3 * '3' => 9
+
+Please note: It yields the number (!) 9, NOT a string '9'!
+
+Similarly, these operations also all work:
+
+3 - '3' => 0
+
+3 / '3' => 1
+
+Just 3 + '3' yields '33' because here JavaScript uses the "I can combine text" mode of the + operator and generates a string instead of a number.
 
