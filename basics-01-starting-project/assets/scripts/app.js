@@ -21,7 +21,12 @@ function subtract() {
     outputResult(currentResult, calcDescription);
 }
 
-function multiply() {}
+function multiply() {
+  const enteredNumber = getUserInput();
+  const calcDescription = `${currentResult}* ${enteredNumber}`;
+  currentResult = currentResult*enteredNumber;
+  outputResult(currentResult, calcDescription);
+}
 
 function divide() {}
 
