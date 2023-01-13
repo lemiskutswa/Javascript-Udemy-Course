@@ -30,7 +30,7 @@ Even when you specify that an input type in javascript should be a string, it ex
 
 This is where parseInt() comes in. It converts the number initially executed as a string to a number for a mathematical operation.You can also use a plus (+) instead of parseInt/parseFloat. 
 
-{NOTE}: The plus operator is the only one that supports string concatenation on JS. 
+{NOTE}: The plus operator is the only one that supports string concatenation on JS. For other operations, Javascript recognizes them and converts the preciding number to an actual number rather than a string. 
 
 Thankfully, JavaScript is pretty smart and therefore is actually able to handle this code:
 
@@ -46,3 +46,5 @@ Similarly, these operations also all work:
 
 Just 3 + '3' yields '33' because here JavaScript uses the "I can combine text" mode of the + operator and generates a string instead of a number.
 
+<h2>Writing efficient code</h2>
+- In Js, you can't pass an operator as value

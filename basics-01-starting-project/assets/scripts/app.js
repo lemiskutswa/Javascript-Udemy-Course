@@ -1,14 +1,31 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-function add() {
-    currentResult = currentResult + parseInt(userInput.value);
-    outputResult(currentResult, '');
+function getUserInput() {
+    return parseInt(userInput.value);
 }
 
+function jibberish() {}
+
+function add() {
+    const enteredNumber = getUserInput();
+    const calcDescription = `${currentResult} + ${enteredNumber}`;
+    currentResult = currentResult + enteredNumber;
+    outputResult(currentResult, calcDescription);
+}
+
+function subtract() {
+    const enteredNumber = getUserInput();
+    const calcDescription = `${currentResult} - ${enteredNumber}`;
+    currentResult = currentResult - enteredNumber;
+    outputResult(currentResult, calcDescription);
+}
+
+function multiply() {}
+
+function divide() {}
+
 addBtn.addEventListener('click', add);
-
-
 
 
 
