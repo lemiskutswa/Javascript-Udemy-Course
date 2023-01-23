@@ -1,6 +1,3 @@
-function circleArea (radius) {
-    result = 3.142*(radius*radius);
-    return `The area of the circle is ${result}`;
-}
+import { camelCase } from "lodash";
 
-console.log(circleArea(10));
+console.log(camelCase('hello world'));

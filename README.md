@@ -47,4 +47,10 @@ Similarly, these operations also all work:
 Just 3 + '3' yields '33' because here JavaScript uses the "I can combine text" mode of the + operator and generates a string instead of a number.
 
 <h2>Writing efficient code</h2>
-- In Js, you can't pass an operator as value
+- In Js, you can't pass an operator as value. 
+
+# More operators
+currentResult = currentResult + enteredNumber; 
+
+            IS THE SAME AS 
+currentResult += enteredNumber; (This is a great shortcut)

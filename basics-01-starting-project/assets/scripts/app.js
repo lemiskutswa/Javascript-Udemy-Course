@@ -9,7 +9,7 @@ function getUserInput() {
 //A function to generate and write the output/log of the calculator
 function createAndWriteOutput(operator, resBeforeCalc, calcNumber) {
     const calcDescription = `${resBeforeCalc} ${operator} ${calcNumber}`;
-    outputResult(currentResult, calcDescription);
+    outputResult(currentResult, calcDescription);//from the vendor file
 }
 
 
@@ -17,14 +17,14 @@ function createAndWriteOutput(operator, resBeforeCalc, calcNumber) {
 function add() {
     const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber);
 }
 
 function subtract() {
     const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     createAndWriteOutput('-', initialResult, enteredNumber);
 }
 
