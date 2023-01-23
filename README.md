@@ -48,6 +48,7 @@ Just 3 + '3' yields '33' because here JavaScript uses the "I can combine text" m
 
 <h2>Writing efficient code</h2>
 - In Js, you can't pass an operator as value. 
+- JS data types include: Numbers, String, Booleans (for conditional code when you have 2 options), Arrays (list of data), and Objects {the most important}. 
 
 # More operators
 currentResult = currentResult + enteredNumber; 
