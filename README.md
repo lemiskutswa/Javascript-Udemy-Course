@@ -59,5 +59,5 @@ currentResult += enteredNumber; (This is a great shortcut)
 NOTE: The purpose of arrays is to store numbers, strings, objects, etc. inside a variable. 
 - When curly braces come after an = sign, add a semicolon at the end (like it is for objects)
 
-<h3>Special values
+<h3>Special values</h3>
 Undefined is given to variables without a value
