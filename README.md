@@ -61,3 +61,16 @@ NOTE: The purpose of arrays is to store numbers, strings, objects, etc. inside a
 
 <h3>Special values</h3>
 Undefined is given to variables without a value
+
+Null on the other hand is never a default value - you can assign a value as null if you want to reset or clear a variable
+
+NaN, unlike the previous 2, is not a data type - it is usually an error, for example, resulting from multiplying a string and a number. To put it simply, it is as a result of invalid calculations. 
+
+<h3>Loading JS scripts earlier</h3>
+We place JS files at the bottom of the HTML file because we want to execute it only after the HTML file has been parsed. However, if you have a large HTML file, this adds to the page loading time which could add infrastructure costs. 
+
+Therefore, you would want to load the JS files earlier but still execute them after the HTML file has been parsed. This allows you to get the best of both worlds. You can check the performance of your pages from the 
+
+                        Note: Parsing = analyzing HTML to figure out what to construct and what to download. Rendering = drawing pixels to your screen based on HTML + CSS construction. 
+
+image.png 
