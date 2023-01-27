@@ -74,3 +74,14 @@ Therefore, you would want to load the JS files earlier but still execute them af
                         Note: Parsing = analyzing HTML to figure out what to construct and what to download. Rendering = drawing pixels to your screen based on HTML + CSS construction. 
 
 image.png 
+
+To solve this, you can place the script calls on the header and use the defer attribute. It ensures that the scripts are downloaded early but execution only starts after parsing of HTML is complete. 
+
+What if you have scripts that don't require HTML to be parsed first (the script doesn't interact with the webpage), use the "async" attribute in place of defer. Async will ensure that the scripts are downloaded early and executed as soon as the download is complete. 
+
+
+<h2>Debugging and efficient development</h2>
+Useful shortcuts
+
+- select next occurence: Ctrl + D
+- comment code: Ctrl + /
