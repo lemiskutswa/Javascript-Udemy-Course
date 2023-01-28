@@ -85,3 +85,14 @@ Useful shortcuts
 
 - select next occurence: Ctrl + D
 - comment code: Ctrl + /
+- Ctrl space: bring back suggestion menu for autocompletion
+
+The first step to debugging is reading the error message - if there is one (when it is not a logical error). 
+
+Secondly, use console.log to debug logical errors
+
+Next, you can use chrome debugging tools built into the browser. 
+
+Your IDE can also help you to debug. 
+
+Breakpoints in chrome dev tools lets you stop code execution when a certain point is reached. 

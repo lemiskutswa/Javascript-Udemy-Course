@@ -4,7 +4,7 @@ let logEntries = [];
 
 //Gets input from input field. 
 function getUserInput() {
-    return parseInt(userInput.value);
+    return userInput.value;
 }
 
 //A function to generate and write the output/log of the calculator
@@ -29,9 +29,10 @@ function writeToLog(operationIdentifier, prevResult, operationNumber, newResult)
 function add() {
     const enteredNumber = getUserInput();
     const initialResult = currentResult;
+    console.log('INPUT', enteredNumber, currentResult);
     currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber);
-    writeToLog('ADD', initialResult, enteredNumber, currentResult);
+    writeToLog('ADD', initialResult, enteredNumber, currentResult);````
 }
 
 function subtract() {
