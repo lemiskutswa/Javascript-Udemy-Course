@@ -4,7 +4,7 @@ let logEntries = [];
 
 //Gets input from input field. 
 function getUserInput() {
-    return userInput.value;
+    return parseInt(userInput.value);
 }
 
 //A function to generate and write the output/log of the calculator
