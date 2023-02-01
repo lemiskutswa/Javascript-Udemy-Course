@@ -32,7 +32,7 @@ function add() {
     console.log('INPUT', enteredNumber, currentResult);
     currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber);
-    writeToLog('ADD', initialResult, enteredNumber, currentResult);````
+    writeToLog('ADD', initialResult, enteredNumber, currentResult);
 }
 
 function subtract() {

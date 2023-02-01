@@ -95,4 +95,6 @@ Next, you can use chrome debugging tools built into the browser.
 
 Your IDE can also help you to debug. 
 
-Breakpoints in chrome dev tools lets you stop code execution when a certain point is reached. 
+Breakpoints in chrome dev tools lets you stop code execution when a certain point is reached. You can use the sources section to 
+
+<h2>Working with control structures</h2>
