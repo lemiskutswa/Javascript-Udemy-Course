@@ -98,3 +98,11 @@ Your IDE can also help you to debug.
 Breakpoints in chrome dev tools lets you stop code execution when a certain point is reached. You can use the sources section to 
 
 <h2>Working with control structures</h2>
+Used when you have some conditions to be met before you execute a certain piece of code or when you want to repeat code execution. 
+
+Boolean Operators: help in returning true/false. Examples: 
+
+1. The Equality operator == to check for value equality
+2. != - checks for value inequality
+3. === checks for value and type equality
+4. !== checks for value and type inequality
