@@ -111,3 +111,6 @@ Boolean Operators: help in returning true/false. Examples:
 7. ! to check if not true
 
 - Strings can also be compares as greater than or less than. For example b > a. Also capital letters are considered to be smaller than lower case letters. 
+
+<h2>If else statements</h3>
+- If you want to introduce more than 2 conditions, use else if
