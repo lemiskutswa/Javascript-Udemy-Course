@@ -106,3 +106,8 @@ Boolean Operators: help in returning true/false. Examples:
 2. != - checks for value inequality
 3. === checks for value and type equality
 4. !== checks for value and type inequality
+5. > & <> signs
+6. >= or <= signs
+7. ! to check if not true
+
+- Strings can also be compares as greater than or less than. For example b > a. Also capital letters are considered to be smaller than lower case letters. 

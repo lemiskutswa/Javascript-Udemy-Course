@@ -25,22 +25,28 @@ function writeToLog(operationIdentifier, prevResult, operationNumber, newResult)
     console.log(logEntries);
 }
 
-//Basic math operation functions.
-function add() {
+function calculateResult(calculationType) {
     const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    console.log('INPUT', enteredNumber, currentResult);
-    currentResult += enteredNumber;
-    createAndWriteOutput('+', initialResult, enteredNumber);
-    writeToLog('ADD', initialResult, enteredNumber, currentResult);
+    let mathOperation;
+    if (calculationType === 'ADD') {
+        currentResult += enteredNumber;
+        mathOperation = '+';
+    } else {
+        currentResult-= enteredNumber;
+        mathOperation = '-';
+    }
+    
+    createAndWriteOutput(mathOperation, initialResult, enteredNumber);
+    writeToLog(calculationType, initialResult, enteredNumber, currentResult);
+}
+
+function add() {
+    calculateResult('ADD');
 }
 
 function subtract() {
-    const enteredNumber = getUserInput();
-    const initialResult = currentResult;
-    currentResult -= enteredNumber;
-    createAndWriteOutput('-', initialResult, enteredNumber);
-    writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult);
+calculateResult('SUBTRACT')
 }
 
 function multiply() {
@@ -59,7 +65,7 @@ function divide() {
     writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
-addBtn.addEventListener('click', add);
+addBtn.addEventListener('click', add);//On clicking this button, the add function will be called which calls, caclulationResult with the 'ADD' parameter value. 
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);

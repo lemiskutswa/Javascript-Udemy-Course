@@ -1,14 +1,7 @@
-let a = 25; 
-let b = '25'; 
 
-function checkEquality() {
-    if (a===b) {
-        return true
-    }
-
-    else {
-        return false
-    }
+function amosFunction (parameters) {
+    //some code to be executed
+    ;
 }
 
-console.log(checkEquality());
+//call the function
