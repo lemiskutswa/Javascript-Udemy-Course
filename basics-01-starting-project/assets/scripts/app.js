@@ -32,9 +32,15 @@ function calculateResult(calculationType) {
     if (calculationType === 'ADD') {
         currentResult += enteredNumber;
         mathOperation = '+';
-    } else {
+    } else if (calculationType === 'SUBTRACT') {
         currentResult-= enteredNumber;
         mathOperation = '-';
+    } else if (calculationType === 'MULTIPLY') {
+        currentResult *= enteredNumber;
+        mathOperation = '*';
+    } else if (calculationType === 'DIVIDE') {
+        currentResult /= enteredNumber;
+        mathOperation = '/';
     }
     
     createAndWriteOutput(mathOperation, initialResult, enteredNumber);
@@ -50,19 +56,11 @@ calculateResult('SUBTRACT')
 }
 
 function multiply() {
-    const enteredNumber = getUserInput();
-    const initialResult = currentResult;
-    currentResult = currentResult * enteredNumber;
-    createAndWriteOutput('*', initialResult, enteredNumber);
-    writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
+    calculateResult('MULTIPLY');
 }
 
 function divide() {
-    const enteredNumber = getUserInput();
-    const initialResult = currentResult;
-    currentResult = currentResult / enteredNumber;
-    createAndWriteOutput('/', initialResult, enteredNumber);
-    writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
+    calculateResult('DIVIDE');
 }
 
 addBtn.addEventListener('click', add);//On clicking this button, the add function will be called which calls, caclulationResult with the 'ADD' parameter value. 
