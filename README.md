@@ -114,3 +114,17 @@ Boolean Operators: help in returning true/false. Examples:
 
 <h2>If else statements</h3>
 - If you want to introduce more than 2 conditions, use else if. The last 'else' code will always be run if no condition has been met. With else if, you have to introduce new conditions just like the initial if statement. 
+
+- If you have only 2 conditions use else, if you have more conditions, use else if. 
+
+- Objects and arrays with the same value do not yield true when they are compared. Why? 
+
+To get true, you'll have to compare the values. For example
+
+const person1 = {name: 'Max'};
+
+const person2 = {name: 'Max'};
+
+person1.name = person2.name //true
+
+but person1 = person 2 //false
