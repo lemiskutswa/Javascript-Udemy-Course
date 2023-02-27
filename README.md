@@ -132,3 +132,5 @@ but person1 = person 2 //false
 
 <h3>Operator precedence</h3>
 Same as BODMAS? Associativity doesn't matter if the precedence is higher. But if operatons have the same precedence, the interpretation follows right-to-left associativity. 
+
+<h3>Falsy and truthy values</h3>
