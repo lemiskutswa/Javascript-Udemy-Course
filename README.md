@@ -128,3 +128,7 @@ const person2 = {name: 'Max'};
 person1.name = person2.name //true
 
 but person1 = person 2 //false
+
+
+<h3>Operator precedence</h3>
+Same as BODMAS? 
