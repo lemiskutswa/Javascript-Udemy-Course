@@ -46,10 +46,10 @@ function calculateResult(calculationType) {
         currentResult-= enteredNumber;
         mathOperation = '-';
     } else if (calculationType === 'MULTIPLY') {
-        currentResult *= enteredNumber;
-        mathOperation = '*';
+        currentResult*= enteredNumber;
+        mathOperation = '*'
     } else if (calculationType === 'DIVIDE') {
-        currentResult /= enteredNumber; 
+        currentResult/= enteredNumber; 
         mathOperation = '/';
     }
     

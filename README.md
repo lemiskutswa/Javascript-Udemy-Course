@@ -110,6 +110,8 @@ Boolean Operators: help in returning true/false. Examples:
 6. >= or <= signs
 7. ! to check if not true
 
+In JS, you should prefer ===/!== over ==/!=. This means that, with control structures, you should care about the type of values that you work with. 
+
 - Strings can also be compares as greater than or less than. For example b > a. Also capital letters are considered to be smaller than lower case letters. 
 
 <h2>If else statements</h3>
@@ -134,3 +136,13 @@ but person1 = person 2 //false
 Same as BODMAS? Associativity doesn't matter if the precedence is higher. But if operatons have the same precedence, the interpretation follows right-to-left associativity. 
 
 <h3>Falsy and truthy values</h3>
+== - abstract equality
+=== - strict equality. 
+
+If a boolean is required, javascript tries to coerce a boolean value. Caste in point: Let's say you have a constant:
+
+const userName = 'Lemis';
+
+if (userName === 'Lemis') {...} //Yields true
+
+if (userName) {...} // Also yields true because of the statement above
