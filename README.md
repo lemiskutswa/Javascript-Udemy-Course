@@ -114,6 +114,17 @@ In JS, you should prefer ===/!== over ==/!=. This means that, with control struc
 
 - Strings can also be compares as greater than or less than. For example b > a. Also capital letters are considered to be smaller than lower case letters. 
 
+- If you have a variable that holds a boolean, you don't have to re-use a boolean operator in the condtion section of an if statement. For instance, 
+
+                                const loggedIn = true;
+                                if (loggedIn) {
+                                    some code;
+                                }
+
+                                else{
+                                    some code;
+                                }
+
 <h2>If else statements</h3>
 - If you want to introduce more than 2 conditions, use else if. The last 'else' code will always be run if no condition has been met. With else if, you have to introduce new conditions just like the initial if statement. 
 
