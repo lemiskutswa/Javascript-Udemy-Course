@@ -107,7 +107,7 @@ Boolean Operators: help in returning true/false. Examples:
 3. === checks for value and type equality
 4. !== checks for value and type inequality
 5. > & <> signs
-6. >= or <= signs
+6. >= or <= signs greater than or equal or, smaller than or equal. 
 7. ! to check if not true
 
 In JS, you should prefer ===/!== over ==/!=. This means that, with control structures, you should care about the type of values that you work with. 
