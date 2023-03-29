@@ -164,3 +164,9 @@ const userName = 'Lemis';
 if (userName === 'Lemis') {...} //Yields true
 
 if (userName) {...} // Also yields true because of the statement above
+
+Zero is inately treated as a fasly value. So if a variable holds zero, the condition is initially false, which mean the code in the if statement will not be executed. This can be useful when you don't want to use zero in your calculations, for example in division. 
+
+Truthy - any other number, objects, arrays
+
+Falsy - 0, NaN, empty string, and undefined. 
