@@ -154,6 +154,9 @@ Same as BODMAS? Associativity doesn't matter if the precedence is higher. But if
 
 === - strict equality. 
 
+
+JS generally works with booleans values (true/false) and truthy & falsy too. 
+
 If a boolean is required, javascript tries to coerce a boolean value. Caste in point: Let's say you have a constant:
 
 const userName = 'Lemis';
