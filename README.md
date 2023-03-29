@@ -130,7 +130,7 @@ In JS, you should prefer ===/!== over ==/!=. This means that, with control struc
 
 - If you have only 2 conditions use else, if you have more conditions, use else if. 
 
-- Objects and arrays with the same value do not yield true when they are compared. Why? 
+- Objects and arrays with the same value do not yield true when they are compared. Why? It has something to do with how they're stored in memory. 
 
 To get true, you'll have to compare the values. For example
 
@@ -142,12 +142,16 @@ person1.name = person2.name //true
 
 but person1 = person 2 //false
 
+Return stops the execution of the code that comes after it. This is useful when you want to check if a situation doesn't meet a given condition and stop the execution of the preceding code. 
+
 
 <h3>Operator precedence</h3>
 Same as BODMAS? Associativity doesn't matter if the precedence is higher. But if operatons have the same precedence, the interpretation follows right-to-left associativity. 
 
 <h3>Falsy and truthy values</h3>
 == - abstract equality
+
+
 === - strict equality. 
 
 If a boolean is required, javascript tries to coerce a boolean value. Caste in point: Let's say you have a constant:
