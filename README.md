@@ -170,3 +170,7 @@ Zero is inately treated as a fasly value. So if a variable holds zero, the condi
 Truthy - any other number, objects, arrays
 
 Falsy - 0, NaN, empty string, and undefined. 
+
+<h3>Monster Killer Project</h3>
+
+You can use uppercase letters to define global variables/contstants. 
