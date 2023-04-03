@@ -174,3 +174,5 @@ Falsy - 0, NaN, empty string, and undefined.
 <h3>Monster Killer Project</h3>
 
 You can use uppercase letters to define global variables/contstants. 
+
+A string can be a value which you pass with aa condition in an if/else statement just like you would for a number.
