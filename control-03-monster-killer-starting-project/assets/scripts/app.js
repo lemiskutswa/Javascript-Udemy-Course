@@ -26,7 +26,7 @@ function attackMonster(mode){
         alert('You Won!');
     } 
     else if (currentPlayerHealth <= 0 && currentMonsterHealth > 0) {
-        alert('You Lost');
+        alert('You Lost!');
     }
     else if (currentPlayerHealth <= 0 && currentMonsterHealth <= 0) {
         alert('You have a draw!');
