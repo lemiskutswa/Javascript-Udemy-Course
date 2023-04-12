@@ -176,3 +176,5 @@ Falsy - 0, NaN, empty string, and undefined.
 You can use uppercase letters to define global variables/contstants. 
 
 A string can be a value which you pass with aa condition in an if/else statement just like you would for a number.
+
+Global constants can be used in conditional code to mitigate the risk of typos. 
