@@ -3,7 +3,14 @@ const STRONG_ATTACK_VALUE = 17;
 const MONSTER_ATTACK_VALUE = 14;
 const HEAL_VALUE = 20;
 
-let chosenMaxLife = 100;
+const enteredValue = prompt('Maximum life for you and the monster', '100' );
+
+let chosenMaxLife = parseInt(enteredValue);
+ 
+if (isNaN(chosenMaxLife) || chosenMaxLife <=0) {
+    chosenMaxLife = 100;
+}
+
 let currentMonsterHealth = chosenMaxLife;
 let currentPlayerHealth = chosenMaxLife;
 let hasBonusLife = true; 
@@ -11,7 +18,7 @@ let hasBonusLife = true;
 function reset() {
     currentMonsterHealth = chosenMaxLife;
     currentPlayerHealth = chosenMaxLife;
-    resetGame();
+    resetGame(chosenMaxLife);
 }
 
 //Remove 'let' to avoid re-initializing the variables and use the global variables 
@@ -42,10 +49,7 @@ function endRound() {
         alert('You have a draw!');
     }
 
-    if (currentMonsterHealth <= 0 && currentPlayerHealth > 0 ||
-        currentPlayerHealth <= 0 && currentMonsterHealth > 0 ||
-        currentPlayerHealth <= 0 && currentMonsterHealth <= 0
-        ) {
+    if (currentMonsterHealth <= 0 || currentPlayerHealth <= 0) {
         reset();
     }
 }
