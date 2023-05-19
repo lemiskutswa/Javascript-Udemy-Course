@@ -157,7 +157,7 @@ Same as BODMAS? Associativity doesn't matter if the precedence is higher. But if
 
 JS generally works with booleans values (true/false) and truthy & falsy too. 
 
-If a boolean is required, javascript tries to coerce a boolean value. Caste in point: Let's say you have a constant:
+If a boolean is required, javascript tries to coerce a boolean value. Case in point: Let's say you have a constant:
 
 const userName = 'Lemis';
 
@@ -165,7 +165,7 @@ if (userName === 'Lemis') {...} //Yields true
 
 if (userName) {...} // Also yields true because of the statement above
 
-Zero is inately treated as a fasly value. So if a variable holds zero, the condition is initially false, which mean the code in the if statement will not be executed. This can be useful when you don't want to use zero in your calculations, for example in division. 
+Zero is inately treated as a fasly value. So if a variable holds zero, the condition is initially false, which means the code in the if statement will not be executed. This can be useful when you don't want to use zero in your calculations, for example in division. 
 
 Truthy - any other number, objects, arrays
 
@@ -178,3 +178,36 @@ You can use uppercase letters to define global variables/contstants.
 A string can be a value which you pass with aa condition in an if/else statement just like you would for a number.
 
 Global constants can be used in conditional code to mitigate the risk of typos. 
+
+<h4>Expressions vs Statements</h4>
+
+In JS, an expression yeilds a value which you can store in a variable or constant. All expressions are statements, but not all statements are expressions, for example if statement is not a expression. An expression would work if you use it on the right side of an equal sign. 
+
+
+!! - double negation(or double bang) can be used to convert a truthy or falsy value into a real Boolean. For example if you have a truthy value, it converts it into a real faslse value. This is useful for type conversion, when you want to avoid truthy/falsy. 
+
+It converts truthy values into true and vice versa
+To assign default values to variables, you can use the || operator. Consider:
+
+const userInput = ''; // This is undefined therefore truthy. 
+
+const userName = !!userInput; - converts it to false, instead of falsy 
+
+const name = userName|| 'Lemis'; //userName Output --> 'Lemis'; Because userName is false. 
+
+Here if a user enters an empty string which is false, 'Lemis' will be set as the default value. 
+
+Suppose you have this code: 
+
+const userInput = '';
+const userName = userInput || null; //In this case, null is returned. This is because when the first operand is falsy, the second operand will always be returned. When both operands are truthy, the second operand will be returned if you use the && logical operator. 
+
+In these cases, you can never have true or false because these operators never generate a boolean. If the first value is truthy, the && operator ALWAYS returns the second value (the second operand), even if that operand should be falsy
+
+
+<h2>Loops</h2>
+Types of loops in JS: 
+for, 
+for-in, 
+for-of, 
+while. 
