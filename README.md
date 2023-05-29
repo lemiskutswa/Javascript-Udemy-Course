@@ -207,7 +207,11 @@ In these cases, you can never have true or false because these operators never g
 
 <h2>Loops</h2>
 Types of loops in JS: 
-for, 
-for-in, 
-for-of, 
-while. 
+for - execute code for a certain number of times - with a counter variable. 
+for-in, - execute for every key in an object
+for-of, - execute for every element of an array. 
+while. - execute as long as condition is true
+
+A variable initialized within a loop is only available inside that loop. 
+
+You can use while loops to replace for loops. 
