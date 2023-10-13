@@ -26,10 +26,10 @@ const names = ['John', 'Jackie', 'Joseph', 'Judith'];
 //    i++;
 // }
 
-let sum = 0;
+// let sum = 0;
 
-for (let i = 2; i <= 6; i++) {
-    sum = sum + i;
-}
+// for (let i = 2; i <= 6; i++) {
+//     sum = sum + i;
+// }
 
-console.log(sum);
+// console.log(sum);

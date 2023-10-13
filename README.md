@@ -71,7 +71,7 @@ We place JS files at the bottom of the HTML file because we want to execute it o
 
 Therefore, you would want to load the JS files earlier but still execute them after the HTML file has been parsed. This allows you to get the best of both worlds. You can check the performance of your pages from the 
 
-                        Note: Parsing = analyzing HTML to figure out what to construct and what to download. Rendering = drawing pixels to your screen based on HTML + CSS construction. 
+                        Parsing = analyzing HTML to figure out what to construct and what to download. Rendering = drawing pixels to your screen based on HTML + CSS construction. 
 
 image.png 
 
@@ -215,3 +215,9 @@ while. - execute as long as condition is true
 A variable initialized within a loop is only available inside that loop. 
 
 You can use while loops to replace for loops. 
+
+To target the element at the end of an array while lopping use this formula arrayName.lenght - 1; 
+
+How does a break statement work in relation to nested loops. 
+
+If you include a break statement inside a nested loop, it only breaks for the inside loop, the outer loop will continue to excecute. For the next iteration of the outside loop, a new execution of the inside loop will be started.  

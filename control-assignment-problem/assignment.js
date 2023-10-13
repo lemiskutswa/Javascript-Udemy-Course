@@ -1,4 +1,4 @@
-// const randomNumber = Math.random(); // produces random number between 0 (including) and 1 (excluding)
+const randomNumber = Math.random(); // produces random number between 0 (including) and 1 (excluding)
 
 //     if (randomNumber > 0.7) {
 //         alert('Yeah booyyy!');
@@ -27,4 +27,6 @@ const testScores = [98, 97, 96, 95, 94];
 
 const randomNumber2 = Math.random();
 
-if (randomNumber2 )
+if (randomNumber2 && randomNumber > 0.7 || randomNumber || randomNumber2 <= 2) {
+    alert('This is awesome');
+}

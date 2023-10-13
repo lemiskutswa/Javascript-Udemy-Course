@@ -242,6 +242,7 @@ function printLogHandler() {
             console.log(`${key} => ${logEntry[key]}`);
         }
         i++;
+        break;
     }
 }
 
