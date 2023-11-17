@@ -103,7 +103,20 @@ const sumUp = (resultHandler,...numbers) => { //Creates an array from the parame
     resultHandler(sum);
 }
 
-console.log(sumUp(0, 5, 10, 11, 12));
-console.log(sumUp(4, 5, 6, 7, 8));
+const sabtractUp = function () {
+    let sum = 0; 
+    for (const num of arguments) {
+        sum -= num;
+    }
+
+    return sum;
+}
+
+const showResult = (result) => {
+    alert('The result after adding all numbers is: ' + result);
+}
+
+sumUp(showResult, 0, 5, 10, 11, 12);
+sumUp(showResult, 4, 5, 6, 7, 8);
 
 
